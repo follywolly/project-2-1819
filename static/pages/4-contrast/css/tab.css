@@ -1,0 +1,42 @@
+*:focus {
+  outline: 2px dashed #00b1eb!important;
+}
+.m-tile__anchor {
+  transition: border 0.3s;
+}
+.m-tile__anchor:focus {
+  box-shadow: inset 0px 0px 3px 3px #00b1eb!important;
+}
+.m-tile__anchor:focus > img {
+  opacity: 0.5!important;
+}
+.visually-hidden:not(:focus) {
+  border: 0;
+  clip: rect(1px 1px 1px 1px); /* IE6, IE7 */
+  clip; rect(1px, 1px, 1px, 1px);
+  height: 1px;
+  margin: -1px;
+  overflow: hidden;
+  padding: 0;
+  position: absolute;
+  width: 1px;
+  color: transparent;
+}
+
+.contrast-button {
+  position: fixed;
+  top: 0;
+  right: 0;
+  z-index: 1000;
+}
+
+.contrast *:focus {
+  outline: 2px dashed #005F7E!important;
+}
+.contrast .m-tile__anchor:focus {
+  box-shadow: inset 0px 0px 3px 3px #005F7E!important;
+}
+
+.header-block__primary-navigation-link.is-current, .header-block__primary-navigation-link:hover, .header-block__secondary-navigation-link.is-current, .header-block__secondary-navigation-link:hover, .footer-nav-block__nav-link:focus, .footer-nav-block__nav-link:hover{
+  color: #00b1eb!important;
+}
