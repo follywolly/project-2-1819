@@ -1,0 +1,26 @@
+{
+  "name": "performance-matters-1819",
+  "version": "1.0.0",
+  "description": "In dit vak gaan we de eerder bij de OBA gemaakte client side web applicatie ombouwen naar een server side gerenderde applicatie. Verder gaan we een reeks van optimalisaties doorvoeren om de performance van de applicatie te verbeteren. Uiteindelijk zorgen we ervoor dat de applicatie offline beschikbaar.",
+  "main": "js/script.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "build": "npm run minify",
+    "minify": "gulp brotli-js && gulp gzip-js && gulp brotli-css && gulp brotli-js"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/follywolly/performance-matters-1819.git"
+  },
+  "author": "FollyWolly (Folkert-Jan)",
+  "license": "MIT",
+  "bugs": {
+    "url": "https://github.com/follywolly/performance-matters-1819/issues"
+  },
+  "homepage": "https://github.com/follywolly/performance-matters-1819#readme",
+  "devDependencies": {
+    "gulp": "^4.0.0",
+    "gulp-brotli": "^1.2.1",
+    "gulp-gzip": "^1.4.2"
+  }
+}
